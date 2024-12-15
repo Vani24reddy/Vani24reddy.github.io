@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sharad vanth - Personal Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/Avatar_2.jpg" alt="Sharad vanth" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Sharad vanth">Sharad vanth</h1>
+
+          <p class="title">DevOps Engineer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:sharadvanthsai@gmail.com" class="contact-link">sharadvanthsai@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+15134105522" class="contact-link">+1 5134105522</a>
+            </div>
+
+          </li>
+
+          <!-- <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="1982-06-23">March 11, 2000</time>
+            </div>
+
+          </li> -->
+
+          <li class="contact-item">
+
+            <!-- <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div> -->
+
+            <!-- <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Jersey City, NJ, USA</address>
+            </div> -->
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/sharad-vanth/" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://github.com/Sharadvanth" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+          <!-- <li class="social-item">
+            <a href="https://www.instagram.com/vinay.__.24/" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li> -->
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+          <!-- <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Blog</button>
+          </li> -->
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">Hi, I'm Sharadvanth</h2>
+        </header>
+
+        <section class="about-text">
+
+          <p>
+            As a DevOps Engineer, I specialize in orchestrating seamless integration between development and operations, 
+            optimizing software delivery pipelines, and ensuring robust infrastructure. Proficient in Docker, Kubernetes, Terraform, 
+            CI/CD, and Ansible, I am dedicated to automating processes, enhancing scalability, and maximizing system reliability. 
+            Eager to contribute my skills in fostering a culture of continuous improvement, I am committed to staying at the 
+            forefront of evolving technologies in the dynamic DevOps landscape.
+
+          </p>
+        </section>
+
+        <div style="text-align: center;">
+          <div class="resume-buttons">
+            <a class="button" href="./assets/Resume/Sharad_Resume.pdf" target="_blank">
+              <i class="fa fa-download"></i>
+              Download Resume
+            </a>
+          </div>
+        </div>
+
+        <!--
+          - Certifications
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">Certifications</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/AZ900.png"
+                 alt="Microsoft Azure Fundamentals" width="75",height="75">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">
+                  <a href="https://learn.microsoft.com/api/credentials/share/en-us/SaiSurajSharadvanthNemaliga-9299/E5E8EA8FEAE9657A?sharingId=7489BD143ECCF5F1" style="color:white;" style="text-align:left" >Microsoft Azure Fundamentals</a>
+                </h4>
+                <p class="service-item-text">
+                  <!-- The most modern and high-quality design made at a professional level. -->
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/AZ104.png" 
+                alt="Microsoft Azure Administrator Associate" width="75",height="75">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">
+                  <a href="https://learn.microsoft.com/api/credentials/share/en-us/SaiSurajSharadvanthNemaliga-9299/C43AB9CB259B120D?sharingId=7489BD143ECCF5F1" style="color:white;" >Microsoft Azure Administrator Associate</a>
+                </h4>
+
+                <p class="service-item-text">
+                  <!-- High-quality development of sites at the professional level. -->
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/aws-cloud-quest-cloud-practitioner.png" 
+                alt="AWS Cloud Quest" width="75",height="75">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">
+                  <a href="https://www.credly.com/badges/3d308409-fe9b-4fda-9a06-bb13d130c693/public_url" style="color:white;" >AWS Cloud Practitioner</a>
+                </h4>
+
+                <p class="service-item-text">
+                  <!-- Professional development of applications for iOS and Android. -->
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/C1.jpeg"
+                alt="Coursera" width="75",height="75">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">
+                  <a href="https://github.com/Sharadvanth/Certifications/blob/main/Python.pdf" style="color:white;" >Python Data Structures</a>
+                </h4>
+
+                <p class="service-item-text">
+                  <!-- I make high-quality photos of any category at a professional level. -->
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/K2.png"
+                alt="KodeKloud-DevOps" width="100",height="100">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">
+                  <a href="https://github.com/Sharadvanth/Certifications/tree/main/Kodekloud" style="color:white;" >Kode Kloud DevOps Engineer</a>
+                </h4>
+
+                <p class="service-item-text">
+                  <!-- I make high-quality photos of any category at a professional level. -->
+                </p>
+              </div>
+
+            </li>
+
+
+          </ul>
+
+        </section>
+
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+            </div>
+
+          </section>
+
+        </div>
+
+
+        <!--
+          - Featured
+         -->
+
+        <section class="Featured">
+
+          <h3 class="h3 clients-title">Featured</h3>
+
+          <ul class="clients-list has-scrollbar">
+
+
+            <li class="clients-item" data-filter-item data-category="DevOps Engineer">
+              <a href="https://github.com/Sharadvanth/FullStack-WebApp-DevOps">
+
+         <figure class="clients-item" style="display: flex; justify-content: center; align-items: center;">
+            <div class="project-item-icon-box">
+              <ion-icon name="eye-outline"></ion-icon>
+            </div>
+           <img src="https://raw.githubusercontent.com/Sharadvanth/FullStack-WebApp-DevOps/main/Documents/Architecture.png" alt="MultiTier WebApp" loading="lazy" style="width: 300px; height: 200px;">
+         </figure>
+
+
+                <h3 class="project-title">BoardGame Webapplication Deployment and Kubernetes</h3>
+
+                <p class="project-category">DevOps Engineer</p>
+
+              </a>
+            </li>
+
+            <li class="clients-item" data-filter-item data-category="DevOps Engineer ">
+              <a href="https://github.com/Sharadvanth/MultibranchPipeline">
+
+              <figure class="clients-item" style="display: flex; justify-content: center; align-items: center;">
+                <div class="project-item-icon-box">
+                 <ion-icon name="eye-outline"></ion-icon>
+                </div>
+              <img src="https://raw.githubusercontent.com/Sharadvanth/MultibranchPipeline/main/Documents/E-commerce.jpg" alt="MultiBranch Pipeline" loading="lazy" style="width: 300px; height: 200px;">
+              </figure>
+
+
+                <h3 class="project-title">MultiBranch MicroService Pipeline(E-commerce WebApp) </h3>
+
+                <p class="project-category">DevOps Engineer</p>
+
+              </a>
+            </li>
+                
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <head>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+        </head>
+
+        <section>
+          <embed src="assets\Resume\Sharad_Resume.pdf" type="application/pdf" width="100%" height="1200px" /> 
+        </section>
+
+      </article>
+
+    <!--
+        - #PORTFOLIO
+      -->
+      
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>DevOps Engineer</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>DevOps Engineer</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+     
+
+
+             <li class="clients-item active" data-filter-item data-category="DevOps Engineer">
+              <a href="https://github.com/Sharadvanth/FullStack-WebApp-DevOps">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                   <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                   <img src="https://raw.githubusercontent.com/Sharadvanth/FullStack-WebApp-DevOps/main/Documents/Architecture.png" alt="MultiTier WebApp" loading="lazy" style="width: 300px; height: 200px;">
+                </figure>
+
+                <h3 class="project-title">BoardGame Webapplication Deployment and Kubernetes</h3>
+
+                <p class="project-category">DevOps Engineer</p>
+
+              </a>
+            </li>
+
+             <li class="clients-item  active" data-filter-item data-category="DevOps Engineer">
+              <a href="https://github.com/Sharadvanth/MultibranchPipeline">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="https://raw.githubusercontent.com/Sharadvanth/MultibranchPipeline/main/Documents/E-commerce.jpg" alt="MultiBranch Pipeline" loading="lazy" style="width: 300px; height: 200px;">
+                </figure>
+
+                <h3 class="project-title">MultiBranch Microservices Pipeline(E-Commerce) </h3>
+
+                <p class="project-category">DevOps Engineer</p>
+
+              </a>
+            </li>
+            
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+      </article>
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <!-- <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199666.5651251294!2d-121.58334177520186!3d38.56165006739519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809ac672b28397f9%3A0x921f6aaa74197fdb!2sSacramento%2C%20CA%2C%20USA!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd"
+              width="400" height="300" loading="lazy"></iframe>
+          </figure>
+        </section> -->
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form class="form" method = "post" action="https://formspree.io/f/mjvnqqzl" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+          </form>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
