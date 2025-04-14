@@ -1,11 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-
+  <style>
+    /* Animation for smooth fade-in effect */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  
+    /* Education section logo and content */
+    .education-logo {
+      display: block;
+      margin: 0 auto 15px auto;
+      border-radius: 10px;
+      width: 150px;
+      animation: fadeIn 1s ease-in-out;
+    }
+  
+    .education-entry {
+      animation: fadeIn 1s ease-in-out;
+      padding-bottom: 20px;
+    }
+  
+    .education-entry h3 {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    /* ✅ Education section: force all text to be white */
+    article.education {
+      color: white;
+    }
+  
+    article.education * {
+      color: white !important;
+    }
+  
+    /* ✅ Experience section: force all text to be white */
+    article.experience {
+      color: white;
+    }
+  
+    article.experience * {
+      color: white !important;
+    }
+  
+    /* Optional spacing and alignment for experience entries */
+    .experience-entry {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 20px;
+      margin-bottom: 30px;
+    }
+  
+    .experience-details {
+      flex: 1;
+      animation: fadeIn 1s ease-in-out;
+    }
+  
+    .experience-logo img {
+      width: 80px;
+      border-radius: 8px;
+      animation: fadeIn 1s ease-in-out;
+    }
+  
+    /* ✅ Fix: Add space at the top of each article to avoid navbar overlap */
+    article {
+      padding-top: 80px;
+    }
+  
+    article > header {
+      padding-top: 20px;
+    }
+  </style>
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ankitha Venkannagari - Personal Portfolio</title>
+  <title>Vani Pailla - Personal Portfolio</title>
 
   <!--
     - favicon
@@ -42,13 +115,13 @@
       <div class="sidebar-info">
 
         <figure class="avatar-box">
-          <img src="assets/images/Avatar.JPG" alt="Ankitha Venkannagari" width="80">
+          <img src="assets\images\Vani Pailla.jpg" alt="Vani Pailla" width="80">
         </figure>
 
         <div class="info-content">
-          <h1 class="name" title="Ankitha Venkannagari">Ankitha Venkannagari</h1>
+          <h1 class="name" title="Vani Pailla">Vani Pailla</h1>
 
-          <p class="title">Data Engineer</p>
+          <p class="title">Data Analyst</p>
         </div>
 
         <button class="info_more-btn" data-sidebar-btn>
@@ -74,7 +147,7 @@
             <div class="contact-info">
               <p class="contact-title">Email</p>
 
-              <a href="mailto:ankithareddy1331@gmail.com" class="contact-link">ankithareddy1331@gmail.com</a>
+              <a href="mailto:paillavani19@gmail.com" class="contact-link">paillavani19@gmail.com</a>
             </div>
 
           </li>
@@ -88,7 +161,7 @@
             <div class="contact-info">
               <p class="contact-title">Phone</p>
 
-              <a href="tel:+15133389595" class="contact-link">+1 513-338-9595</a>
+              <a href="tel:+16562030669" class="contact-link">+1 656-203-0669</a>
             </div>
 
           </li>
@@ -109,15 +182,15 @@
 
           <li class="contact-item">
 
-            <!-- <div class="icon-box">
+             <div class="icon-box">
               <ion-icon name="location-outline"></ion-icon>
-            </div> -->
+            </div>
 
-            <!-- <div class="contact-info">
+             <div class="contact-info">
               <p class="contact-title">Location</p>
 
-              <address>Jersey City, NJ, USA</address>
-            </div> -->
+              <address>Tampa, FL, USA</address>
+            </div>
 
           </li>
 
@@ -128,13 +201,13 @@
         <ul class="social-list">
 
           <li class="social-item">
-            <a href="https://www.linkedin.com/in/reddy-ankita/" class="social-link">
+            <a href="https://www.linkedin.com/in/vani-reddy-52aab71b4/" class="social-link">
               <ion-icon name="logo-linkedin"></ion-icon>
             </a>
           </li>
 
           <li class="social-item">
-            <a href="https://github.com/Ankithavenkannagari" class="social-link">
+            <a href="https://github.com/Vani24reddy" class="social-link">
               <ion-icon name="logo-github"></ion-icon>
             </a>
           </li>
@@ -174,6 +247,14 @@
           </li>
 
           <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Education</button>
+          </li>
+          
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Experience</button>
+          </li>
+
+          <li class="navbar-item">
             <button class="navbar-link" data-nav-link>Resume</button>
           </li>
 
@@ -204,25 +285,28 @@
       <article class="about  active" data-page="about">
 
         <header>
-          <h2 class="h2 article-title">Hi, I'm Ankitha </h2>
+          <h2 class="h2 article-title">Hi, I'm Vani </h2>
         </header>
 
         <section class="about-text">
 
           <p>
-            As a Data Engineer, I specialize in designing and automating efficient data pipelines, integrating complex data systems, 
-            and delivering scalable cloud-based solutions. Proficient in Snowflake, Azure Data Factory, Python, SQL, and Tableau, I am 
-            dedicated to optimizing ETL workflows, reducing processing times, and enabling actionable insights through interactive 
-            visualizations. With expertise in data modeling, warehousing, and real-time analytics, I aim to drive data-driven decision-making 
-            and empower business success. Eager to contribute my skills in fostering innovation, I am committed to staying at the forefront 
-            of evolving technologies in the dynamic data engineering landscape.
+            As a data analyst with 4+ years of experience using data to solve complex business challenges and empower teams with 
+            actionable insights. I'm currently pursuing my M.S. in Computer Science at the University of South Florida and have
+            built a strong foundation in SQL, Python, Power BI, Tableau, Azure, and Google BigQuery.
+            As a Data Analyst Intern at USF’s Technology Transfer Office, I design real-time dashboards and build scalable ETL pipelines
+            that improve operational efficiency and automate reporting processes. Prior to this, at DBS Tech and Accenture,
+            I led cross-functional data initiatives that improved query performance, enhanced reporting speed, and supported 
+            leadership with data-driven decision-making.
 
+            I’m passionate about clean data, scalable systems, and real-world impact—and I’m eager to join a team where data informs
+            experience, enhances strategy, and supports long-term product innovation.
           </p>
         </section>
 
         <div style="text-align: center;">
           <div class="resume-buttons">
-            <a class="button" href="assets/Resume/Ankitha_DE_Resume.pdf" target="_blank">
+            <a class="button" href="assets\Resume\Vani_Pailla_Resume.pdf" target="_blank">
               <i class="fa fa-download"></i>
               Download Resume
             </a>
@@ -239,7 +323,7 @@
 
           <ul class="service-list"> 
 
-            <li class="service-item">
+            <!-- <li class="service-item">
 
               <div class="service-icon-box">
                 <img src="./assets/images/AZ900.png"
@@ -255,7 +339,7 @@
                 </p>
               </div>
 
-            </li> 
+            </li> -->
 
             <!-- <li class="service-item">
 
@@ -279,13 +363,13 @@
             <li class="service-item">
 
               <div class="service-icon-box">
-                <img src="./assets/images/aws-cloud-quest-cloud-practitioner.png" 
-                alt="AWS Cloud Quest" width="75",height="75">
+                <img src="assets\images\Google Analytics Certification.jpg"
+                alt="Google Analytics Certification" width="75",height="75">
               </div>
 
               <div class="service-content-box">
                 <h4 class="h4 service-item-title">
-                  <a href="https://www.credly.com/badges/3d8882ee-6dac-43c6-b279-d32242bdce2a/public_url" style="color:white;" >AWS Cloud Practitioner</a>
+                  <a href="https://skillshop.credential.net/aaf4cb13-ae64-4bdc-a7b5-cd027d8e9739#acc.R1kzxfiH" style="color:white;" >Google Analytics Certification</a>
                 </h4>
 
                 <p class="service-item-text">
@@ -298,13 +382,13 @@
             <li class="service-item">
 
               <div class="service-icon-box">
-                <img src="./assets/images/C1.jpeg"
+                <img src="assets\images\Databases and SQL for Data Science with Python.jpg""
                 alt="Coursera" width="75",height="75">
               </div>
 
               <div class="service-content-box">
                 <h4 class="h4 service-item-title">
-                  <a href="https://github.com/Ankithavenkannagari/Certifications/blob/main/Python/python%20data%20structures.pdf" style="color:white;" >Python Data Structures</a>
+                  <a href="https://www.coursera.org/account/accomplishments/verify/P79N6JSST842" style="color:white;" >Databases and SQL for Data Science with Python</a>
                 </h4>
 
                 <p class="service-item-text">
@@ -314,7 +398,7 @@
 
             </li>
 
-            <li class="service-item">
+            <!-- <li class="service-item">
 
               <div class="service-icon-box">
                 <img src="./assets/images/aws-academy-graduate-aws-academy-cloud-security-foundations.png"
@@ -327,11 +411,11 @@
                 </h4>
 
                 <p class="service-item-text">
-                  <!-- I make high-quality photos of any category at a professional level. -->
+                   I make high-quality photos of any category at a professional level. 
                 </p>
               </div>
 
-            </li>
+            </li> -->
 
 
           </ul>
@@ -371,38 +455,38 @@
           <ul class="clients-list has-scrollbar">
 
 
-            <li class="clients-item" data-filter-item data-category="Data Engineer">
-              <a href="https://github.com/Ankithavenkannagari/British-Airways-Reviews">
+            <li class="clients-item" data-filter-item data-category="Data Analyst">
+              <a href="https://github.com/Vani24reddy/HR-Analysis-Dashboard">
 
          <figure class="clients-item" style="display: flex; justify-content: center; align-items: center;">
             <div class="project-item-icon-box">
               <ion-icon name="eye-outline"></ion-icon>
             </div>
-           <img src="https://raw.githubusercontent.com/Ankithavenkannagari/British-Airways-Reviews/refs/heads/main/main/dashboard.png" alt="British Airways Reviews" loading="lazy" style="width: 300px; height: 200px;">
+           <img src="https://private-user-images.githubusercontent.com/93905253/432981896-432a4c38-2f24-4531-8b02-4a3dcfafadfd.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDQ0MTUyODcsIm5iZiI6MTc0NDQxNDk4NywicGF0aCI6Ii85MzkwNTI1My80MzI5ODE4OTYtNDMyYTRjMzgtMmYyNC00NTMxLThiMDItNGEzZGNmYWZhZGZkLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA0MTElMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwNDExVDIzNDMwN1omWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWFkZjI3ZDVmZjZlNmFlNDY1ZmJkODdjZThlN2I0NGQ1NzBiODA0YjNmNjE2MzgyNmVjMWEzMzZhYTdhZTk1OGImWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.qcLqdMXPZDCTcbca9VwsxRO6XWc3KToyuyADawvLR5s" alt="HR Attendance Dashboard Overview" loading="lazy" style="width: 300px; height: 200px;">
          </figure>
 
 
-                <h3 class="project-title">British Airways Reviews</h3>
+                <h3 class="project-title">HR Attendance Dashboard Overview </h3>
 
-                <p class="project-category">Data Engineer</p>
+                <p class="project-category">Data Analyst</p>
 
               </a>
             </li>
 
-            <li class="clients-item" data-filter-item data-category="Data Engineer ">
-              <a href="https://github.com/Ankithavenkannagari/Tokyo-Olympic-Data-Analytics">
+            <li class="clients-item" data-filter-item data-category="Data Analyst ">
+              <a href="https://github.com/Vani24reddy/Business-Insights-360">
 
               <figure class="clients-item" style="display: flex; justify-content: center; align-items: center;">
                 <div class="project-item-icon-box">
                  <ion-icon name="eye-outline"></ion-icon>
                 </div>
-              <img src="https://raw.githubusercontent.com/Ankithavenkannagari/Tokyo-Olympic-Data-Analytics/refs/heads/main/main/tokyoflowchart.png" alt="Tokyo Olympics Analytics" loading="lazy" style="width: 300px; height: 200px;">
+              <img src="https://private-user-images.githubusercontent.com/93905253/432988004-618e72a0-9ec7-4927-af08-1a889ce2eca3.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDQ0MTcxMzQsIm5iZiI6MTc0NDQxNjgzNCwicGF0aCI6Ii85MzkwNTI1My80MzI5ODgwMDQtNjE4ZTcyYTAtOWVjNy00OTI3LWFmMDgtMWE4ODljZTJlY2EzLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA0MTIlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwNDEyVDAwMTM1NFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWFiNzdkZWQyYTk5YTE1OTA2NTBlZWQwN2YwZDc1MTQzNWRhNTlkMGFjZTM4YzliNTAyOTUzNTY5MWU1ZDljM2ImWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.lQTSWU3xIbK6oR85EcHhz8R1YFEs0Zy27fbFDlwjDb0" alt="Business Insights 360" loading="lazy" style="width: 300px; height: 200px;">
               </figure>
 
 
-                <h3 class="project-title"> Tokyo Olympics Analytics </h3>
+                <h3 class="project-title"> Business Insights 360 </h3>
 
-                <p class="project-category">Data Engineer</p>
+                <p class="project-category">Data Analyst</p>
 
               </a>
             </li>
@@ -414,8 +498,100 @@
 
       </article>
 
+      
+      <article class="education" data-page="education">
 
+        <header>
+          <h2 class="h2 article-title">Education</h2>
+        </header>
+      
+        <section class="timeline">
+      
+          <!-- USF -->
+          <div class="timeline-item" style="margin-bottom: 20px;">
+            <div class="timeline-content" style="animation: fadeIn 1s ease-in-out;">
+              <img src="assets/images/usf logo.jpg" alt="University of South Florida Logo"
+                   style="display: block; margin: 0 auto 10px auto; border-radius: 8px; width: 150px;">
+      
+              <h3 class="h4" style="text-align:left;">University of South Florida
+                <span style="float:right; font-weight:normal;">Aug. 2023 – May 2025</span>
+              </h3>
+              <p><strong>Master of Science in Computer Science</strong><br>Tampa, Florida</p>
+              <p><em>Relevant Courses:</em> Deep Learning, Machine Learning, Human Computer Interaction, Operating Systems, Introduction to Algorithms, Computer Architecture, Smart And Connected Health, Security in Privacy & ML</p>
+            </div>
+          </div>
+      
+          <!-- JNTUH (no logo) -->
+          <div class="timeline-item">
+            <div class="timeline-content">
+              <h3 class="h4">JNTUH University
+                <span style="float:right; font-weight:normal;">Aug. 2017 – May 2021</span>
+              </h3>
+              <p><strong>Bachelor of Technology in Computer Science and Engineering</strong><br>Hyderabad, India</p>
+            </div>
+          </div>
+      
+        </section>
+      </article>
 
+      <article class="experience" data-page="experience">
+        <header>
+          <h2 class="h2 article-title">Experience</h2>
+        </header>
+      
+        <section style="margin-top: 20px;">
+          
+          <!-- USF -->
+          <div style="display: flex; margin-bottom: 40px;">
+            <div style="width: 30%; padding-right: 20px;">
+              <p><strong>June 2024 – Present</strong><br>Engineering Intern</p>
+            </div>
+            <div style="width: 70%; position: relative;">
+              <p><strong>USF Technology Transfer Center | Tampa, Florida</strong></p>
+              <p>
+                Designed and deployed an ETL pipeline using SQL and Python, reducing manual workload by 30% and improving data load speeds by 50% for over 2 million records per batch. 
+                Built an HR attendance dashboard in Power BI, enabling real-time workforce analytics and cutting report preparation time by 50%. 
+                Partnered with business teams to deliver strategic, insight-driven recommendations.
+              </p>
+              <!--<img src="assets/images/usf_logo.png" alt="USF Logo" style="position: absolute; top: 0; right: 0; width: 50px;">-->
+            </div>
+          </div>
+      
+          <!-- DBS -->
+          <div style="display: flex; margin-bottom: 40px;">
+            <div style="width: 30%; padding-right: 20px;">
+              <p><strong>Oct 2021 – June 2023</strong><br>Analyst</p>
+            </div>
+            <div style="width: 70%; position: relative;">
+              <p><strong>DBS Tech | Hyderabad, India</strong></p>
+              <p>
+                Optimized SQL queries in Murex Datamart Views and Reporting Tables, improving performance by 40%. 
+                Tuned PostgreSQL queries for large datasets (10M+ rows), reducing execution time by 35%. 
+                Created dashboards in Power BI and Tableau. Improved data accuracy by 98% through anomaly detection in Teradata. 
+                Delivered reports that enhanced executive decision-making by 15%.
+              </p>
+              <!--<img src="assets/images/dbs_logo.png" alt="DBS Logo" style="position: absolute; top: 0; right: 0; width: 50px;">-->
+            </div>
+          </div>
+      
+          <!-- Accenture -->
+          <div style="display: flex; margin-bottom: 40px;">
+            <div style="width: 30%; padding-right: 20px;">
+              <p><strong>Jan 2021 – Oct 2021</strong><br>Data Analyst</p>
+            </div>
+            <div style="width: 70%; position: relative;">
+              <p><strong>Accenture Solutions Pvt. Ltd. | Hyderabad, India</strong></p>
+              <p>
+                Automated Power BI reports, reducing load times from 30 seconds to 5 seconds. 
+                Conducted A/B testing and segmentation analysis that increased engagement by 15% and conversions by 10%. 
+                Analyzed marketing data to uncover sales trends and forecast a 20% revenue recovery.
+              </p>
+              <!--<img src="assets/images/accenture_logo.png" alt="Accenture Logo" style="position: absolute; top: 0; right: 0; width: 50px;">-->
+            </div>
+          </div>
+      
+        </section>
+      </article>
       <!--
         - #RESUME
       -->
@@ -431,7 +607,7 @@
         </head>
 
         <section>
-          <embed src="assets/Resume/Ankitha_DE_Resume.pdf" type="application/pdf" width="100%" height="1200px" /> 
+          <embed src="assets\Resume\Vani_Pailla_Resume.pdf" type="application/pdf" width="100%" height="1200px" /> 
         </section>
 
       </article>
@@ -455,7 +631,7 @@
             </li>
 
             <li class="filter-item">
-              <button data-filter-btn>Data Engineer</button>
+              <button data-filter-btn>Data Analyst</button>
             </li>
 
           </ul>
@@ -479,7 +655,7 @@
               </li>
 
               <li class="select-item">
-                <button data-select-item>Data Engineer</button>
+                <button data-select-item>Data Analyst</button>
               </li>
 
             </ul>
@@ -491,40 +667,41 @@
      
 
 
-             <li class="clients-item active" data-filter-item data-category="Data Engineer">
-              <a href="https://github.com/Ankithavenkannagari/Tokyo-Olympic-Data-Analytics">
+             <li class="clients-item active" data-filter-item data-category="Data Analyst">
+              <a href="https://github.com/Vani24reddy/HR-Analysis-Dashboard">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                    <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                   <img src="https://raw.githubusercontent.com/Ankithavenkannagari/Tokyo-Olympic-Data-Analytics/refs/heads/main/main/tokyoflowchart.png" alt="Tokyo Olympics Analytics" loading="lazy" style="width: 300px; height: 200px;">
+                   <img src="https://private-user-images.githubusercontent.com/93905253/432981896-432a4c38-2f24-4531-8b02-4a3dcfafadfd.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDQ0MTY2MzksIm5iZiI6MTc0NDQxNjMzOSwicGF0aCI6Ii85MzkwNTI1My80MzI5ODE4OTYtNDMyYTRjMzgtMmYyNC00NTMxLThiMDItNGEzZGNmYWZhZGZkLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA0MTIlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwNDEyVDAwMDUzOVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWM5MTRiZWYwYzFhNTMzZDNjZmQ1MmFjODhiNWYwN2E2Yzc1MjBkZDc3NGNlMGVkZjU2NTI2YWE0MmJiNmY0ZWMmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.xY_NErAF4lYJJzHLcK3I0cQUHMFUn1ueiFX2VAddr6M">
                 </figure>
 
-                <h3 class="project-title">Tokyo Olympics Analytics</h3>
+                <h3 class="project-title">HR Analysis Dashboard</h3>
 
-                <p class="project-category">Data Engineer</p>
+                <p class="project-category">Data Analyst</p>
 
               </a>
             </li>
 
-            <li class="clients-item active" data-filter-item data-category="Data Engineer">
-              <a href="https://github.com/Ankithavenkannagari/British-Airways-Reviews">
+            <li class="clients-item active" data-filter-item data-category="Data Analyst">
+              <a href="https://github.com/Vani24reddy/Business-Insights-360?tab=readme-ov-file">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                    <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                   <img src="https://raw.githubusercontent.com/Ankithavenkannagari/British-Airways-Reviews/refs/heads/main/main/dashboard.png" alt="British Airways Reviews" loading="lazy" style="width: 300px; height: 200px;">
+                   <img src="https://private-user-images.githubusercontent.com/93905253/432988004-618e72a0-9ec7-4927-af08-1a889ce2eca3.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDQ0MTcxMzQsIm5iZiI6MTc0NDQxNjgzNCwicGF0aCI6Ii85MzkwNTI1My80MzI5ODgwMDQtNjE4ZTcyYTAtOWVjNy00OTI3LWFmMDgtMWE4ODljZTJlY2EzLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA0MTIlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwNDEyVDAwMTM1NFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWFiNzdkZWQyYTk5YTE1OTA2NTBlZWQwN2YwZDc1MTQzNWRhNTlkMGFjZTM4YzliNTAyOTUzNTY5MWU1ZDljM2ImWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.lQTSWU3xIbK6oR85EcHhz8R1YFEs0Zy27fbFDlwjDb0">
                 </figure>
 
-                <h3 class="project-title">British Airways Reviews</h3>
+                <h3 class="project-title">Business Insights 360</h3>
 
-                <p class="project-category">Data Engineer</p>
+                <p class="project-category">Data Analyst</p>
 
               </a>
+              <!--
             </li>
 
              <li class="clients-item  active" data-filter-item data-category="Data Engineer">
@@ -543,7 +720,7 @@
                 <p class="project-category">Data Engineer</p>
 
               </a>
-            </li>
+            </li> -->
             
           </ul>
 
@@ -578,7 +755,7 @@
 
           <h3 class="h3 form-title">Contact Form</h3>
 
-          <form class="form" method = "post" action="https://formspree.io/f/mkggjoqr" data-form>
+          <form class="form" method="POST" action="https://formspree.io/f/xanekynn" data-form>
 
             <div class="input-wrapper">
               <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
